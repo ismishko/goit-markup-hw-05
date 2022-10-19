@@ -431,11 +431,6 @@
           </ul>
         </div>
       </section>
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button type="button" data-modal-close>Закрити</button>
-        </div>
-      </div>
     </main>
     <!--Підвал-->
     <footer class="pidval">
@@ -518,6 +513,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="close-button-container">
+          <svg class="close-button-icon" width="18px" height="18px">
+            <use href="./images/symbol-defs.svg#icon-krest"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

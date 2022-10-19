@@ -69,6 +69,7 @@ ul {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 .modal {
   position: absolute;
@@ -81,6 +82,28 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+.close-button-container {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: var(--background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.close-button-icon {
+  fill: currentColor;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.close-button-icon:hover,
+.close-button-icon:focus {
+  color: var(--logo-and-hover);
 }
 /* хедер */
 .main-nav {
@@ -531,7 +554,6 @@ img {
   padding-right: 24px;
   padding-bottom: 63px;
   padding-left: 24px;
-  /* transition: 500ms opacity linear; */
   background: rgba(33, 150, 243, 0.9);
   font-size: 18px;
   line-height: 1.56;
