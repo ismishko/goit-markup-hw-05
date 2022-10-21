@@ -130,6 +130,8 @@ ul {
   color: var(--background-color);
   background-color: var(--logo-and-hover);
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -213,6 +215,7 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -233,8 +236,8 @@ ul {
   width: 100%;
   height: 4px;
   left: 0;
-  bottom: 0;
-  margin-bottom: -1px;
+  top: 100%;
+  transform: translate(0, -100%);
 }
 .site-nav {
   display: flex;
@@ -259,17 +262,11 @@ ul {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-nav .link-contact:hover,
 .contact-nav .link-contact:focus {
   color: var(--logo-and-hover);
-}
-.icon-contact {
-  fill: currentColor;
-}
-.icon-contact:hover,
-.icon-contact:focus {
-  fill: var(--logo-and-hover);
 }
 .social-list {
   display: flex;
@@ -279,12 +276,6 @@ ul {
 .parrent-adress {
   display: flex;
   align-items: baseline;
-}
-.icon-footer {
-  fill: var(--background-color);
-}
-.icon-footer:hover {
-  fill: var(--background-color);
 }
 /*Наші переваги*/
 .feature-list {
@@ -423,6 +414,9 @@ ul {
   width: 44px;
   height: 44px;
   fill: var(--social-links);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-size 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-href:hover,
 .icon-href:focus {
@@ -450,6 +444,8 @@ img {
   align-items: center;
   border: 1px solid var(--social-links);
   border-radius: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list {
   gap: 30px;
@@ -493,6 +489,7 @@ img {
 .portfolio-link {
   color: var(--primary-text-color);
   text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -515,6 +512,8 @@ img {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -598,6 +597,7 @@ img {
   line-height: 1.71;
   color: var(--background-color);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contact {
   padding-top: 0;
@@ -605,6 +605,7 @@ img {
   text-decoration: none;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .google-adress:hover,
 .google-adress:focus {
@@ -641,6 +642,9 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   background-size: 100%;
   border-radius: 50px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-size 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-href-footer:hover {
   background-color: var(--logo-and-hover);
